@@ -13,7 +13,7 @@
 
 1. Inline
 
-```
+``` html
   <script>
     alert('Hello');
   </script>
@@ -24,7 +24,7 @@
 
 2. JS파일 Import
 
-```
+``` html
   <script src="script.js"></script>
 ```
 
@@ -36,7 +36,7 @@
 
 1. defer
 
-```
+``` html
   <html>
     <head>
       <script src="script.js" defer></script>
