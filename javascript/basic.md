@@ -52,7 +52,7 @@
 
 2. type
 
-```
+``` html
   <html>
     <head>
       <script src="script.js" type="module"></script>
