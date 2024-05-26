@@ -1,4 +1,4 @@
-# javascript
+# Javascript
 
 ## 연산자
 1. === 연산자
