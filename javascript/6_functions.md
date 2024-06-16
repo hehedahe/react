@@ -1,6 +1,7 @@
 # Javascript
 
 ## 함수
+
 함수는 바로 실행하는 코드가 아닌, 나중에 함수를 호출했을 때 실행되는 코드를 정의하는 것이다.
 
 함수를 사용할 때 매개변수의 디폴트 값을 지정해 줄 수 있다.
@@ -57,12 +58,12 @@ greetUser("furiosa", "Hello, what's up?"); // max\nHello, what's up?
 
 #### 4) 화살표 함수를 사용할 때 return 사용 가능
 
-반환문 외에 다른 로직이 없는 경우,  중괄호와 return 키워드를 생략할 수 있다.
+반환문 외에 다른 로직이 없는 경우, 중괄호와 return 키워드를 생략할 수 있다.
 
 ``` javascript
   number => number * 3; // sccess: true
   number => return number * 3; // return 키워드는 생략되어야 하므로 오류 발생
-  number => if (...) { return xxx; } // if문 자체는 리턴된 수 없으므로 오류 발생
+  number => if (...) { return xxx; } // if문 자체는 리턴될 수 없으므로 오류 발생
 ```
 
 #### 5) 객체만 반환
