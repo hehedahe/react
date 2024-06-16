@@ -1,4 +1,4 @@
-# javascript
+# Javascript
 
 ## 배열
 
