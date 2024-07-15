@@ -7,13 +7,13 @@
 함수를 사용할 때 매개변수의 디폴트 값을 지정해 줄 수 있다.
 
 ``` javascript
-function greetUser(userName, message = "Hello!") {
-  console.log(userName);
-  console.log(message);
-}
+  function greetUser(userName, message = "Hello!") {
+    console.log(userName);
+    console.log(message);
+  }
 
-greetUser("max"); // max\nHello!
-greetUser("furiosa", "Hello, what's up?"); // max\nHello, what's up?
+  greetUser("max"); // max\nHello!
+  greetUser("furiosa", "Hello, what's up?"); // max\nHello, what's up?
 ```
 
 디폴트값을 설정한 매개변수에 다른 값을 넣으면 디폴트 값을 오버라이드 한다.

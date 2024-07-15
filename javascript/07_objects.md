@@ -6,30 +6,30 @@
 - `.`을 이용하면 객체 안에 정의된 프로퍼티에 접근할 수 있다.
 
 ``` javascript
-const user = {
-  name: "manggom";
-  age: 2,
-  greet() {
-    console.log('Helloooo');
-  }
-};
+  const user = {
+    name: "manggom";
+    age: 2,
+    greet() {
+      console.log('Helloooo');
+    }
+  };
 
-console.log(user.name); // maggom
-user.greet(); // Helloooo
+  console.log(user.name); // maggom
+  user.greet(); // Helloooo
 ```
 
 - 또한, 객체 안의 필드나 메서드에 접근하고 싶으면 `this` 키워드를 붙이면 된다.
 
 ``` javascript
-const user = {
-  name: "manggom";
-  age: 2,
-  greet() {
-    console.log(this.age);
-  }
-};
+  const user = {
+    name: "manggom";
+    age: 2,
+    greet() {
+      console.log(this.age);
+    }
+  };
 
-user.greet(); // 2
+  user.greet(); // 2
 ```
 
 ## 클래스
@@ -40,23 +40,23 @@ user.greet(); // 2
   즉, 인스턴스화한다는 것은 클래스의 생성자를 이용해 `객체를 생성할 수 있다`는 뜻이다.
 
 ``` javascript
-class User {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
+  class User {
+    constructor(name, age) {
+      this.name = name;
+      this.age = age;
+    }
+
+    greet() {
+      console.log('Hello!');
+    }
   }
 
-  greet() {
-    console.log('Hello!');
-  }
-}
-
-const user1 = new User("manggom", 2);
-console.log(user1); // User {name: "manggom, age: 2, constructor: Object}
+  const user1 = new User("manggom", 2);
+  console.log(user1); // User {name: "manggom, age: 2, constructor: Object}
 ```
 
 - 물론, 인스턴스화된 객체를 이용하여 클래스 안의 메서드에 접근도 가능하다.
 
 ``` javascript
-user1.greet(); // Hello!
+  user1.greet(); // Hello!
 ```
